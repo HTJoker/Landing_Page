@@ -3,6 +3,7 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -65,5 +66,40 @@
 }
 
 .navigate a li:hover {
+  color: aquamarine;
+}
+
+.left-side {
+  width: 500px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  padding: 10px 0;
+  margin: 0 0;
+  color: aquamarine;
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 0;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(10, 10, 10, 85%);
+}
+
+img {
+  border: 2px solid aquamarine;
+  border-radius: 20px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+legend {
   color: aquamarine;
 }
