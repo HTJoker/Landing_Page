@@ -29,4 +29,4 @@ for (let i = 0; i < questions.length; i++) {
   }
 }
 
-alert(`Congrats, Your got ${score}/${questions.length}`);
+alert(`Congrats! Your got ${score}/${questions.length}`);
