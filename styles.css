@@ -1,228 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
 * {
-  border: 1px solid;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Monserrat", sans-serif;
 }
 
-.header {
-  width: 100%;
-  height: 80px;
-  display: block;
-  background-color: #101010;
+body {
+  background-color: rgba(128, 128, 128, 0.5);
 }
 
-.inner-header {
-  width: 1000px;
-  height: 100%;
-  display: block;
-  margin: 0 auto;
-}
-
-.logo-container {
-  height: 100%;
-  display: flex;
-  float: left;
-}
-
-.logo-container h1 {
-  height: 100%;
-  color: gray;
-  display: flex;
-  align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 32px;
-  font-weight: 200;
-}
-
-.logo-container h1 span {
-  font-weight: 800;
-}
-
-.navigate {
-  float: right;
-  height: 100%;
-}
-
-.navigate a {
-  height: 100%;
-  display: flex;
-  float: left;
-  padding: 0 20px;
-}
-
-.navigate a:last-child {
-  padding-right: 0;
-}
-
-.navigate a li {
-  display: flex;
-  align-items: center;
-  color: gray;
-  font-family: Arial, Helvetica, sans-serif;
+li,
+a,
+button {
+  font-weight: 500;
   font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  width: 100%;
+  height: 3em;
+  background-color: rgb(35, 35, 35);
+}
+
+.logo {
+  cursor: pointer;
+  color: rgb(245, 245, 245);
+}
+
+.logo span {
+  color: rgb(0, 255, 255);
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
   transition: all 0.3s ease 0s;
 }
 
-.navigate a li:hover {
-  color: aquamarine;
-}
-
-.left-side {
-  width: 500px;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.right-side {
-  width: 500px;
-  margin: 0 0;
-  display: flex;
-  justify-content: flex-end;
-}
-
-h2 {
-  padding: 10px 0;
-  margin: 0 0;
-  color: aquamarine;
-}
-
-.section1 {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 0 0;
-  width: 100%;
-  height: 400px;
-  background-color: rgba(10, 10, 10, 85%);
-}
-
-.section2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 0 0;
-  width: 100%;
-  height: 400px;
-  background-color: rgba(10, 10, 10, 25%);
-}
-
-.section3 {
-  background-color: rgba(10, 10, 10, 55%);
-  width: 100%;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.quote {
-  width: 500px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: lighter;
-}
-
-.legend {
-  display: flex;
-  justify-content: end;
-  font-style: italic;
-}
-
-.img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.chef {
-  border: 2px solid aquamarine;
-  border-radius: 20px;
-  width: 400px;
-  display: flex;
-  justify-content: center;
-  transition: all 0.3s ease 0s;
-}
-
-.chef:hover {
-  width: 405px;
-}
-
-legend {
-  color: aquamarine;
+.nav-links li a:hover {
+  color: rgb(0, 255, 255);
 }
 
 button {
-  background-color: #101010;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  width: 110px;
+  height: 30px;
+  background-color: rgb(0, 255, 255);
   border: none;
-  border-radius: 10px;
-  width: 100px;
-  height: 25px;
-  font-size: 16px;
-  margin: 10px 0;
+  border-radius: 20px;
   transition: all 0.3s ease 0s;
-  color: white;
 }
 
 button:hover {
-  background-color: aquamarine;
-  color: black;
-  width: 105px;
-}
-
-.img-list {
-  width: 75%;
-  height: 100px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 20px 0;
-}
-
-.img-list li {
-  border: 2px solid aquamarine;
-  border-radius: 20px;
-  width: 100px;
-  height: 100px;
-}
-
-.img-txt {
-  width: 75%;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 0 0;
-}
-
-.img-txt li {
-  width: 100px;
-  height: 100px;
-  text-align: center;
-}
-
-.img-info {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 50px;
-}
-
-.last {
-  width: 100%;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.last-box {
-  width: 60%;
-  height: 100px;
-  background-color: #101010;
-  border-radius: 25px;
-  justify-content: center;
+  transform: scale(105%);
 }
