@@ -21,9 +21,58 @@
         <a href="#"><button>Contact Me</button></a>
       </header>
     </section>
-    <section>
+    <section class="main">
       <main>
-        
+        <!--Image Slider Start-->
+        <div class="slider">
+          <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+            <!--Slide image start-->
+            <div class="slide first">
+              <img src="./Images/landscape_1.jpeg" alt="lake view from dock" />
+            </div>
+            <div class="slide">
+              <img src="./Images/landscape_2.jpeg" alt="Meadow at sunset" />
+            </div>
+            <div class="slide">
+              <img src="./Images/landscape_3.jpeg" alt="Waterfall at sunset" />
+            </div>
+            <div class="slide">
+              <img src="./Images/landscape_4.jpeg" alt="Green nature" />
+            </div>
+            <!--Slide image end-->
+            <!--Auto Nav Start-->
+            <div class="nav-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+            <!--Auto Nav End-->
+          </div>
+          <!--Nav Manual Start-->
+          <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+          <!--Nav Manual End-->
+        </div>
+        <!--Image Slider End-->
+        <script type="text/javascript">
+          let counter = 1;
+          setInterval(() => {
+            document.getElementById("radio" + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+              counter = 1;
+            }
+          }, 5000);
+        </script>
       </main>
     </section>
   </body>
